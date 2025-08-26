@@ -17,7 +17,7 @@ export default function Dashboard({ token }) {
   const fetchHistory = async () => {
     setLoading(true);
     try {
-      const res = await api.get("/search/history", {
+      const res = await api.get("/api/search/history", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

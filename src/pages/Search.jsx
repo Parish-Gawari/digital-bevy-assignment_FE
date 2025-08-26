@@ -12,7 +12,7 @@ export default function Search({ token }) {
     setLoading(true);
     try {
       const res = await api.post(
-        "/search",
+        "/api/search",
         { keyword },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -13,7 +13,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const res = await api.post("/auth/signup", {
+      const res = await api.post("/api/auth/signup", {
         name,
         email,
         password,
